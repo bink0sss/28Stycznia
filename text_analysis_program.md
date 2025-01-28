@@ -15,7 +15,12 @@ Create a program that analyzes a text and logs the results into a log file.
 - Extract and display all unique words.
 
 ### Sample Code:
+### Wyrażenie regularne r'\b\w+\b' w Pythonie jest używane do dopasowywania słów w tekście, gdzie:
 
+r'' oznacza, że jest to tzw. "raw string", co oznacza, że znaki specjalne (np. \) nie będą interpretowane jako sekwencje ucieczki. Umożliwia to łatwiejsze zapisywanie wyrażeń regularnych.
+\b to granica słowa. Oznacza, że dopasowanie musi znajdować się na początku lub na końcu słowa.
+\w+ dopasowuje jedno lub więcej znaków alfanumerycznych (litery, cyfry lub podkreślenia). Znak + oznacza, że musi być co najmniej jeden taki znak, ale mogą ich być więcej.
+Podsumowując, wyrażenie r'\b\w+\b' dopasowuje pełne słowa (tj. ciągi alfanumeryczne otoczone granicami słowa) w danym tekście. Na przykład, w zdaniu "Przykład z wyrazem", to wyrażenie dopasuje "Przykład", "z", i "wyrazem" jako osobne słowa.
 ```python
 import re
 import logging
